@@ -1,0 +1,17 @@
+export function largestNameOfArray(nameArray: string[]) {
+
+    let largest = '';
+
+    for (let i = 0; i < nameArray.length; i++) {
+
+        if (largest.length < nameArray[i].length) {
+            largest = nameArray[i]
+        }
+    }
+    return largest;
+}
+
+let heroes = ['fricsifrafrisifirfifurifu', 'Deadpool', 'Ciclope', 'Magneto', 'Profesor Charles Xavier'];
+
+let hero = largestNameOfArray(heroes);
+console.log(hero);
